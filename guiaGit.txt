@@ -1,0 +1,62 @@
+clonar un proyecto 
+***************************
+1. creamos una carpeta donde vamos a clonar nuestro proyecto
+2. obrtenemos la URL desde git hub
+3. abrimos la consola git bash desde la carpeta donde vamos a clonar
+y  digitamos.
+
+$ git clone URL del repositorio donde esta el proyecto 
+
+
+
+si retomamos el proyecto hacemos esto:
+$ git init
+ 
+-  agregamos un archivo hola.html al proyecto
+
+$ git add .
+
+$ git commit -m "comit add file hola.html"
+
+$ git push -u origin master
+
+
+
+
+Creacion de tag o versiones de un proyecto en git hub
+*****************************************************************
+1. creamos un tag con git en la consola git bash y le damos un nombre
+$ git tag 15-09-2021v1 -m "version 1 del proyecto"
+
+2. para visualizar lo creado
+$ git log - - oneline
+
+3. subir tag al preositorio remoto
+$ git push  - - tags
+
+
+
+
+****************
+desde la terminal del equipo donde esta el proyecto que queremos subir a github
+Nos vamos a la carpeta del proyecto y ejecutamos estos comandos.
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+
+git push -u origin master
+
+
+
+
+
+
+*******************************************************************
+$ git push   para subir proyecto de git a Git hub
+
+$ git pull    para sincronizar de git hub a git
